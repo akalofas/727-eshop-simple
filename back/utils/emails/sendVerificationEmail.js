@@ -22,7 +22,7 @@ const sendVerificationEmail = async ({
   toCreatedAt,
   toExpiresAt,
 }) => {
-  const verificationURL = `${process.env.FRONTEND_URL}${FRONTEND_URL_EMAIL_VERIFY}${token}`;
+  const verificationURL = `${process.env.FRONTEND_URL}${process.env.FRONTEND_URL_EMAIL_VERIFY}${token}`;
   const logo =
     "https://agodco.com/images/AGODCO/Logo/AGODCO_Group_LLC_logo.png";
   const siteName = "KoukouRoukou";

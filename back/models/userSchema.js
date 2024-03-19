@@ -38,9 +38,9 @@ const userSchema = new mongoose.Schema(
     mobile: {
       type: String,
     },
-    gendre: {
+    gender: {
       type: String,
-      enum: ["male", "female"],
+      enum: ["Male", "Female"],
     },
     birthDate: {
       type: Date,

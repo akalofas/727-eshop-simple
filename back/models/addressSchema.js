@@ -7,6 +7,10 @@ const addressSchema = new mongoose.Schema(
       ref: "User",
       required: true,
     },
+    defaultAddress: {
+      type: Boolean,
+      default: false
+    },
     nickName: {
       type: String,
       required: true,

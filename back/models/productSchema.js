@@ -36,7 +36,7 @@ const specificationSchema = new mongoose.Schema(
     },
     unitSale: {
       type: String,
-      Enum: ["cm", "m", "mm", "kg", "g", "mg", "l", "ml", "piece"],
+      Enum: ["cm", "m", "mm", "kg", "g", "mg", "l", "ml", "item"],
     },
     weight: {
       type: String,

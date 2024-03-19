@@ -5,12 +5,17 @@ const path = require("path");
 const express = require('express');
 const connectDB = require('./db/connectDB');
 const initializeDb = require('./db/initilizeDB');
+const authRoutes = require('./routes/authRoutes')
 const app = express();
 
+
+app.use(express.json());
 
 connectDB().then(() => {
     initializeDb();
   });
+
+app.use('/auth', authRoutes)
 
 app.get('/', (req, res) => {
   res.send('Hello World');

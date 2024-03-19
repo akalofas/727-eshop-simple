@@ -2,11 +2,6 @@ const mongoose = require("mongoose");
 
 const vendorSchema = new mongoose.Schema(
   {
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-      required: true,
-    },
     name: {
       type: String,
       required: true,
@@ -32,7 +27,7 @@ const vendorSchema = new mongoose.Schema(
       required: true,
     },
     address: {
-      type: mongoose.mongo.Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "Address",
       required: true,
     },
